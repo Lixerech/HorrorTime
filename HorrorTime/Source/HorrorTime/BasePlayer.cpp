@@ -43,5 +43,7 @@ void ABasePlayer::MoveForward(float AxisVal)
 void ABasePlayer::MoveRight(float AxisVal)
 {
 	AddMovementInput(GetActorRightVector() * AxisVal);
+
+
 }
 
