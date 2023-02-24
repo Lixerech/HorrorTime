@@ -34,7 +34,7 @@ void ABasePlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 	PlayerInputComponent->BindAxis(TEXT("Turn"), this, &ABasePlayer::AddControllerYawInput);
 	PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &ABasePlayer::AddControllerPitchInput);
 	PlayerInputComponent->BindAction(TEXT("Jump"), IE_Pressed, this, &ABasePlayer::Jump);
-	PlayerInputComponent->BindAction(TEXT("Crouch"), IE_Pressed, this, &ABasePlayer::Crouch);
+	/*PlayerInputComponent->BindAction(TEXT("Crouch"), IE_Pressed, this, &ABasePlayer::Crouch);*/
 }
 
 void ABasePlayer::MoveForward(float AxisVal)
